@@ -6,7 +6,6 @@ using KillrVideo.Host;
 using KillrVideo.Listeners;
 using KillrVideo.Protobuf;
 using KillrVideo.Search;
-using KillrVideo.ServiceDiscovery;
 using KillrVideo.SuggestedVideos;
 using KillrVideo.UserManagement;
 using Microsoft.Extensions.Configuration;
@@ -14,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 namespace KillrVideo.Configuration
 {
     /// <summary>
-    /// String tokens for graph element lables and property keys.
+    /// String tokens for graph element tables and property keys.
     /// </summary>
     public static class ConfigKeys {
 
@@ -43,15 +42,15 @@ namespace KillrVideo.Configuration
         [Export]
         public static IConfiguration GetConfigurationRoot(CommandLineArgs commandLineArgs)
         {
-            return new ConfigurationBuilder()
+            var configBuilt = new ConfigurationBuilder()
                 // Allow fallback to configuration from the Docker .env file
-                .Add(new EnvironmentFileSource(new Dictionary<string, string>
-                {
-                    // The IP address for etcd to do service discovery
-                    { "Etcd:IP", "KILLRVIDEO_DOCKER_IP" },
-                    // The IP address to broadcast for gRPC services (i.e. register with service discovery)
-                    { "Broadcast:IP", "KILLRVIDEO_HOST_IP" }
-                }))
+//                .Add(new EnvironmentFileSource(new Dictionary<string, string>
+//                {
+//                    // The IP address for etcd to do service discovery
+//                    { "Etcd:IP", "KILLRVIDEO_DOCKER_IP" },
+//                    // The IP address to broadcast for gRPC services (i.e. register with service discovery)
+//                    { "Broadcast:IP", "KILLRVIDEO_HOST_IP" }
+//                }))
                 // Add the configuration defaults
                 .AddInMemoryCollection(new Dictionary<string, string>
                 {
@@ -100,6 +99,8 @@ namespace KillrVideo.Configuration
                 // Allow configuration via commandline parameters
                 .AddCommandLine(commandLineArgs.Args)
                 .Build();
+
+            return configBuilt;
         }
 
         [Export]
@@ -143,13 +144,13 @@ namespace KillrVideo.Configuration
             return options;
         }
 
-        [Export]
-        public static EtcdOptions GetEtcdOptions(IConfiguration configuration)
-        {
-            var options = new EtcdOptions();
-            configuration.GetSection("Etcd").Bind(options);
-            return options;
-        }
+//        [Export]
+//        public static EtcdOptions GetEtcdOptions(IConfiguration configuration)
+//        {
+//            var options = new EtcdOptions();
+//            configuration.GetSection("Etcd").Bind(options);
+//            return options;
+//        }
 
         private static T GetOptions<T>(IConfiguration configuration)
             where T : new()
