@@ -28,6 +28,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KillrVideo.UserManagement",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KillrVideo.VideoCatalog", "KillrVideo.VideoCatalog\KillrVideo.VideoCatalog.csproj", "{3A639F7C-2685-4F27-B247-21208C23AEDB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Killrvideo.ConsolidatedHost.Tests", "Killrvideo.ConsolidatedHost.Tests\Killrvideo.ConsolidatedHost.Tests.csproj", "{1D771DA5-335F-4673-AB87-6ED9E0B1ED61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Killrvideo.ConsolidatedHost", "Killrvideo.ConsolidatedHost\Killrvideo.ConsolidatedHost.csproj", "{47228FC8-1C12-41A7-85DC-511F0F750D8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,5 +94,13 @@ Global
 		{3A639F7C-2685-4F27-B247-21208C23AEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A639F7C-2685-4F27-B247-21208C23AEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A639F7C-2685-4F27-B247-21208C23AEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D771DA5-335F-4673-AB87-6ED9E0B1ED61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D771DA5-335F-4673-AB87-6ED9E0B1ED61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D771DA5-335F-4673-AB87-6ED9E0B1ED61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D771DA5-335F-4673-AB87-6ED9E0B1ED61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47228FC8-1C12-41A7-85DC-511F0F750D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47228FC8-1C12-41A7-85DC-511F0F750D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47228FC8-1C12-41A7-85DC-511F0F750D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47228FC8-1C12-41A7-85DC-511F0F750D8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
