@@ -4,4 +4,8 @@
         <TargetFramework>netcoreapp3.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Killrvideo.ConsolidatedHost.Facade\Killrvideo.ConsolidatedHost.Facade.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Killrvideo.ConsolidatedHost\Killrvideo.ConsolidatedHost.csproj" />
+      <ProjectReference Include="..\Killrvideo.ConsolidatedHost.Facade\Killrvideo.ConsolidatedHost.Facade.csproj" />
     </ItemGroup>
 
 </Project>
