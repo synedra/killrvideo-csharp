@@ -1,0 +1,15 @@
+{
+    "name": "Killrvideo CSharp",
+    "summary": "Clone of youtube using DSE and csharp drivers",
+    "urls": {
+        "heroimage": "https://yt3.googleusercontent.com/ytc/AMLnZu99z7O76h-EBAOloogUjeaXsi0HN-2YaiixWxAjyw=s176-c-k-c0x00ffffff-no-rj-mo",
+        "github":"https://github.com/KillrVideo/killrvideo-csharp"
+    },
+    "usecases": "Digital Library",
+    "owner": "no maintenance",
+    "apis": [],
+    "tags": [
+        "csharp",
+        "grpc api"
+    ]
+}
